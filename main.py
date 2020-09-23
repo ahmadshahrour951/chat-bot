@@ -32,3 +32,14 @@ print("ONLY THEN can I determine your sole song....")
 # I initially keep this variable empty and then change it when the user inputs something
 user_response = ""
 
+# This loop continues on forever, asking the user which artists the user likes best. Unless they type 'done'. That will be the only way to exit the loop.
+while True:
+    user_response = input("so... who is it?: ")
+
+    # Quits program when user responds with 'done'
+    if user_response == 'done':
+        break
+
+    # This is where the function is invoked. It was defined earlier with logic, then invoked here for application.
+    bot_response = get_bot_response(user_response)
+    print(bot_response)
