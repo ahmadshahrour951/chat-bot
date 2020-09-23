@@ -24,3 +24,11 @@ def get_bot_response(user_response):
         return "For pete's sake! I gave you simple instructions to input one of the three choices I gave you earlier... scroll up buddy..."
 
 
+# This is where I welcome the user
+print("Welcome to the MUSIC BONANZA")
+print("Please type who do you prefer, Pink Floyd, The Beetles, or Neither?")
+print("ONLY THEN can I determine your sole song....")
+
+# I initially keep this variable empty and then change it when the user inputs something
+user_response = ""
+
